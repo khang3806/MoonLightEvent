@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Sales Page</title>
+    <link rel="stylesheet" href="assets/css/Ticket-Sale.css">
+    <script defer src="assets/js/Ticket-Sales.js"></script>
+    <link rel="apple-touch-icon" sizes="57x57" href="/htdocs/assets/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/htdocs/assets/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/htdocs/assets/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/htdocs/assets/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/htdocs/assets/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/htdocs/assets/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/htdocs/assets/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/htdocs/assets/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/htdocs/assets/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/htdocs/assets/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/htdocs/assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/htdocs/assets/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/htdocs/assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="/htdocs/assets/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/htdocs/assets/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="Home.html">
+                <img src="assets/images/logo.png" alt="Moonlight Events Logo" class="logo">
+            </a>  
+            <button class="nav-toggle">☰</button>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Festival-Listings.html">Festival Listings</a></li>
+                    <li><a href="Favorite-Festival.html">Favorite Festivals</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="Feedback.html">Feedback</a></li>
+                    <li><a href="Ticket-Sales.html">Ticket Sales</a></li>
+                    <li><a id="login-link" href="Login-Account.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="ticket-sales">
+            <h1>Ticket Sales</h1>
+            <section class="festival-detail-banner">
+                <h2 id="festival-title">Festival Name</h2>
+                <p id="festival-location">Location: </p>
+                <p id="festival-date">Date: </p>
+            </section>
+    
+            <section class="festival-info">
+                <div class="festival-images">
+                    <img id="main-image" src="" alt="Festival Image">
+                </div>
+    
+                <div class="festival-description">
+                    <h2>About the Festival</h2>
+                    <p id="festival-description"></p>
+    
+                    <h3>Required age</h3>
+                    <p id="required-age"></p>
+    
+                    <h3>Highlights:</h3>
+                    <ul id="festival-highlights"></ul>
+                </div>
+    
+                
+            </section>
+            <div class="festival-selection">
+                <h2>Select Festival:</h2>
+                
+            </div>
+
+            <div class="ticket-options">
+                <div class="ticket-option">
+                    <h2>Regular Ticket</h2>
+                    <p>Price: <span id="regular-price">Select a festival</span></p>
+                    <button class="quantity-decrease" data-ticket-type="regular">-</button>
+                    <input type="number" id="regular-quantity" value="0" readonly>
+                    <button class="quantity-increase" data-ticket-type="regular">+</button>
+                </div>
+
+                <div class="ticket-option">
+                    <h2>VIP Ticket</h2>
+                    <p>Price: <span id="vip-price">Select a festival</span></p>
+                    <button class="quantity-decrease" data-ticket-type="vip">-</button>
+                    <input type="number" id="vip-quantity" value="0" readonly>
+                    <button class="quantity-increase" data-ticket-type="vip">+</button>
+                </div>
+            </div>
+
+            <div class="total-amount-section">
+                <h3>Total Amount:</h3>
+                <p id="total-price-usd">0.00 USD</p>
+            </div>
+            
+            <div class="payment-options">
+                <div class="bank-payment">
+                    <label for="bank-selection">Select Bank:</label>
+                    <select id="bank-selection">
+                        <option value="none">Select Bank</option>
+                        <option value="vietcombank">Vietcombank</option>
+                        <option value="techcombank">Techcombank</option>
+                        <option value="vietinbank">VietinBank</option>
+                        <option value="bidv">BIDV</option>
+                        <option value="agribank">Agribank</option>
+                        <option value="mbbank">MB Bank</option>
+                    </select>
+                </div>
+                <button class="payment-button">Pay with Credit Card</button>
+                <button class="payment-button">Pay with E-Wallet</button>
+            </div>
+
+            <div class="confirmation" id="confirmation" style="display: none;">
+                <p>Your order has been successfully placed! Thank you for purchasing tickets.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MoonLight Events. All Rights Reserved.</p>
+        <ul class="footer-nav">
+            <li><a href="About-Us.html">About Us</a></li>
+            <li><a href="Contact-Us.html">Contact Us</a></li>
+            <li><a href="Faq.html">FAQ</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

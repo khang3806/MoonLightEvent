@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/css/Login-Account.css">
+    <script defer src="assets/js/Login-Account.js"></script> <!-- Thêm file JavaScript -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/htdocs/assets/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/htdocs/assets/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/htdocs/assets/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/htdocs/assets/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/htdocs/assets/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/htdocs/assets/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/htdocs/assets/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/htdocs/assets/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/htdocs/assets/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/htdocs/assets/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/htdocs/assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/htdocs/assets/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/htdocs/assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="/htdocs/assets/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/htdocs/assets/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="Home.html">
+                <img src="assets/images/logo.png" alt="Moonlight Events Logo" class="logo">
+            </a>  
+            <button class="nav-toggle">☰</button>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Festival-Listings.html">Festival Listings</a></li>
+                    <li><a href="Favorite-Festival.html">Favorite Festivals</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="Feedback.html">Feedback</a></li>
+                    <li><a id="login-link" href="Login-Account.html">Login</a>                    </li>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <form class="login-account" id="login-form">
+            <a href="Home.html"><img src="assets/images/logo.png" alt="Logo" class="login-logo"></a>
+            <h1>Login</h1>
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter your username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+
+            <button type="submit">Login</button>
+
+            <p>Don't have an account? <a href="Sign-Up.html">Sign up here</a></p>
+
+            <p id="error-message" style="color: red; display: none;"></p>
+            <p id="success-message" style="color: green; display: none;"></p>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Moonlight Events. All Rights Reserved.</p>
+        <ul class="footer-nav">
+            <li><a href="About-Us.html">About Us</a></li>
+            <li><a href="Contact-Us.html">Contact Us</a></li>
+            <li><a href="Faq.html">FAQ</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

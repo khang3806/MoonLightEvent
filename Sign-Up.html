@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Registration</title>
+    <link rel="stylesheet" href="assets/css/Sign-Up.css">
+    <script src="assets/js/Sign-Up.js"></script>
+    <script src="assets/js/Auth.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header>
+        <div class="container-header">
+            <a href="Home.html">
+                <img src="assets/images/logo.png" alt="Moonlight Events Logo" class="logo">
+            </a> 
+            <button class="nav-toggle">☰</button> 
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Festival-Listings.html">Festival Listings</a></li>
+                    <li><a href="Favorite-Festival.html">Favorite Festivals</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="Feedback.html">Feedback</a></li>
+                    <li><a id="login-link" href="Login-Account.html">Login</a>                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Registration Form Container -->
+    <div class="form-container">
+        <a href="Home.html"><img src="assets/images/logo.png" alt="Logo" class="register-logo"></a>
+        <h1>Sign Up</h1>
+        <form id="registrationForm" onsubmit="return validateForm(event)">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group radio-group">
+                <label class="radio-inline">
+                    <input type="radio" name="gender" value="male"> Male
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="gender" value="female"> Female
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="gender" value="others"> Others
+                </label>
+            </div>
+            
+            <div class="form-group">
+                <label for="birthdate">Date of Birth:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="phone">Phone Number (with country code):</label>
+                <input type="tel" id="phone" name="phone" placeholder="e.g. +84912345678" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+            </div>
+        
+            <div class="form-group">
+                <button type="submit" class="btn">Sign Up</button>
+            </div>
+        </form>
+        
+        <p id="error-message" style="color: red; display: none;">Error: Please check the form.</p>
+        <p id="success-message" style="color: green; display: none;">Sign up successful!</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 MoonLight Events. All Rights Reserved.</p>
+        <ul class="footer-nav"> 
+            <li><a href="About-Us.html">About Us</a></li>
+            <li><a href="Contact-Us.html">Contact Us</a></li>
+            <li><a href="Faq.html">FAQ</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>

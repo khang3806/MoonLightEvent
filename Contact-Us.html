@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="assets/css/Contact-Us.css">
+    <script src="assets/js/Contact-Us.js" defer></script>
+    <script src="assets/js/Auth.js" defer></script>
+    <link rel="apple-touch-icon" sizes="57x57" href="/ACE-CANTHO-1_CP2496H02_Group1_v1/ACE-CANTHO-1_CP2496H02_Group1_v1/assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/ACE-CANTHO-1_CP2496H02_Group1_v1/ACE-CANTHO-1_CP2496H02_Group1_v1/assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/ACE-CANTHO-1_CP2496H02_Group1_v1/ACE-CANTHO-1_CP2496H02_Group1_v1/assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/ACE-CANTHO-1_CP2496H02_Group1_v1/ACE-CANTHO-1_CP2496H02_Group1_v1/assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/ACE-CANTHO-1_CP2496H02_Group1_v1/ACE-CANTHO-1_CP2496H02_Group1_v1/assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/ACE-CANTHO-1_CP2496H02_Group1_v1/ACE-CANTHO-1_CP2496H02_Group1_v1/assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/ACE-CANTHO-1_CP2496H02_Group1_v1/ACE-CANTHO-1_CP2496H02_Group1_v1/assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/ACE-CANTHO-1_CP2496H02_Group1_v1/ACE-CANTHO-1_CP2496H02_Group1_v1/assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/ACE-CANTHO-1_CP2496H02_Group1_v1/ACE-CANTHO-1_CP2496H02_Group1_v1/assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/ACE-CANTHO-1_CP2496H02_Group1_v1/ACE-CANTHO-1_CP2496H02_Group1_v1/assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/ACE-CANTHO-1_CP2496H02_Group1_v1/ACE-CANTHO-1_CP2496H02_Group1_v1/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/ACE-CANTHO-1_CP2496H02_Group1_v1/ACE-CANTHO-1_CP2496H02_Group1_v1/assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/ACE-CANTHO-1_CP2496H02_Group1_v1/ACE-CANTHO-1_CP2496H02_Group1_v1/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/ACE-CANTHO-1_CP2496H02_Group1_v1/ACE-CANTHO-1_CP2496H02_Group1_v1/assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ACE-CANTHO-1_CP2496H02_Group1_v1/ACE-CANTHO-1_CP2496H02_Group1_v1/assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="Home.html">
+                <img src="assets/images/logo.png" alt="Moonlight Events Logo" class="logo">
+            </a>          
+            <button class="nav-toggle" onclick="toggleNav()">☰</button>
+            <nav>
+                <ul class="nav-menu"> 
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Festival-Listings.html">Festival Listings</a></li>
+                    <li><a href="Favorite-Festival.html">Favorite Festivals</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="Feedback.html">Feedback</a></li>
+                    <li><a id="login-link" href="Login-Account.html">Login</a>                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="contact-form">
+            <h1>How can I help?</h1>
+            <p>Do you have a question or are you interested in working with my team and me? Just fill out the form fields below.</p>
+            <form id="contact-form" action="submit-form.php" method="POST">
+                <label for="topic">I'd like to chat about...</label>
+                <select id="topic" name="topic" required>
+                    <option value="festival-schedule">Festival Schedule</option>
+                    <option value="ticket-purchase">Ticket Purchase</option>
+                    <option value="event-location">Event Location</option>
+                    <option value="performers">Performers</option>
+                    <option value="festival-policies">Festival Policies</option>
+                    <option value="general-inquiries">General Inquiries</option>
+                    <option value="Other questions">Other questions</option>
+                </select>
+
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Your first name..." required>
+
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Your last name..." required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Your email address..." required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Remember, short & sweet please" rows="5" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MoonLight Events. All Rights Reserved.</p>
+        <ul class="footer-nav">     
+            <li><a href="About-Us.html">About Us</a></li>  
+            <li><a href="Contact-Us.html">Contact Us</a></li>
+            <li><a href="Faq.html">FAQ</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
