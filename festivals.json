@@ -1,0 +1,207 @@
+[
+    {
+        "id": 1,
+        "name": "Chinese New Year",
+        "religion": "Buddhist, Taoist",
+        "month": "January or February",
+        "country": "China, Vietnam, Taiwan",
+        "image": "assets/images/chinese new year festival.jpg",
+        "description": "The Chinese New Year, also known as the Spring Festival, is a time of family reunions, feasts, and cultural traditions.",
+        "ageRequirement": "No specific age requirement",
+        "highlights": [
+            "Dragon and Lion Dances",
+            "Fireworks",
+            "Reunion Dinners",
+            "Red Envelopes with Money",
+            "Decorating with Red and Gold"
+        ]
+    },
+        {
+        "id": 2,
+        "name": "Carnival of Brazil",
+        "religion": "Christian",
+        "month": "February",
+        "country": "Brazil",
+        "image": "assets/images/carnival festival.jpg",
+        "description": "The Carnival of Brazil is the world's largest carnival, featuring samba parades, music, and vibrant costumes.",
+        "ageRequirement": "No specific age requirement",
+        "highlights": [
+            "Samba Parades",
+            "Street Parties",
+            "Colorful Costumes",
+            "Live Music",
+            "Food and Drinks"
+        ]
+    },
+        {
+        "id": 3,
+        "name": "Holi",
+        "religion": "Hindu",
+        "month": "March",
+        "country": "India, Nepal",
+        "image": "assets/images/holi festival.jpg",
+        "description": "Holi, the Festival of Colors, is a joyful celebration of spring, love, and the triumph of good over evil.",
+        "ageRequirement": "No specific age requirement",
+        "highlights": [
+            "Throwing Colored Powders",
+            "Singing and Dancing",
+            "Bonfires",
+            "Feasting with Sweets",
+            "Visiting Friends and Family"
+        ]
+    },
+        {
+        "id": 4,
+        "name": "Eid al-Fitr",
+        "religion": "Muslim",
+        "month": "April",
+        "country": "Various",
+        "image": "assets/images/eid-al-fitr festival.jpg",
+        "description": "Eid al-Fitr, also known as the 'Festival of Breaking the Fast,' is a significant religious holiday celebrated by Muslims worldwide.",
+        "ageRequirement": "No specific age requirement",
+        "highlights": [
+            "Morning Prayer",
+            "Breaking the Fast",
+            "Charitable Donations",
+            "Feasting and Celebrations",
+            "Visiting Friends and Family"
+        ]
+    },
+        {
+        "id": 5,
+        "name": "Cinco de Mayo",
+        "religion": "None",
+        "month": "May",
+        "country": "Mexico, United States",
+        "image": "assets/images/cinco de mayo festival.jpg",
+        "description": "Cinco de Mayo celebrates the Mexican Army's victory over the French Empire at the Battle of Puebla in 1862.",
+        "ageRequirement": "No specific age requirement",
+        "highlights": [
+            "Parades",
+            "Traditional Mexican Music",
+            "Dancing",
+            "Authentic Mexican Food",
+            "Cultural Events"
+        ]
+    },
+        {
+        "id": 6,
+        "name": "Glastonbury",
+        "religion": "None",
+        "month": "June",
+        "country": "United Kingdom",
+        "image": "assets/images/glastonbury festival.jpg",
+        "description": "The Glastonbury Festival is one of the world's largest music and arts festivals.",
+        "ageRequirement": "No specific age requirement",
+        "highlights": [
+            "Live Music Performances",
+            "Camping",
+            "Art Installations",
+            "Theatre Shows",
+            "Food Stalls"
+        ]
+     },
+        {
+        "id": 7,
+        "name": "Bastille Day",
+        "religion": "None",
+        "month": "July",
+        "country": "France",
+        "image": "assets/images/bastille day festival.jpg",
+        "description": "Bastille Day commemorates the French Revolution with celebrations across France.",
+        "ageRequirement": "No specific age requirement",
+        "highlights": [
+            "Fireworks Displays",
+            "Parades",
+            "Music Concerts",
+            "Street Parties",
+            "French Cuisine"
+        ]
+    },
+        {
+        "id": 8,
+        "name": "Obon",
+        "religion": "Buddhist",
+        "month": "August",
+        "country": "Japan",
+        "image": "assets/images/obon festival.jpg",
+        "description": "Obon, also known as Bon Festival, is a traditional Japanese event to honor the spirits of ancestors with rituals and festivities.",
+        "ageRequirement": "No specific age requirement",
+        "highlights": [
+            "Lantern Floating Ceremonies",
+            "Traditional Bon Odori Dancing",
+            "Visiting Ancestral Graves",
+            "Lighting Incense for Ancestors",
+            "Fireworks Displays"
+        ]
+    },
+        {
+        "id": 9,
+        "name": "Oktoberfest",
+        "religion": "None",
+         "month": "September",
+         "country": "Germany",
+         "image": "assets/images/ortoberfest festival.jpg",
+         "description": "Oktoberfest is the world's largest beer festival, held annually in Munich, Germany.",
+         "ageRequirement": "18+ for Alcohol Consumption",
+         "highlights": [
+            "Beer Tents",
+            "Traditional Bavarian Costumes",
+            "Folk Music",
+            "Fairground Rides",
+            "German Food"
+        ]
+    },
+        {
+            "id": 10,
+            "name": "Halloween",
+            "religion": "Pagan",
+            "month": "October",
+            "country": "Global",
+            "image": "assets/images/halloween festival.jpg",
+            "description": "Halloween is a spooky celebration of costumes, trick-or-treating, and haunted festivities.",
+            "ageRequirement": "No specific age requirement",
+            "highlights": [
+                "Costume Parties",
+                "Trick-or-Treating",
+                "Pumpkin Carving",
+                "Haunted Houses",
+                "Ghost Stories"
+            ]
+    },
+        {   
+            "id": 11,
+            "name": "Loy Krathong",
+            "religion": "Buddhist",
+            "month": "November",
+            "country": "Thailand",
+            "image": "assets/images/loy krathong festival.jpg",
+            "description": "Loy Krathong is a beautiful Thai festival where people release decorated floating lanterns onto rivers to honor water spirits and let go of bad luck.",
+            "ageRequirement": "No specific age requirement",
+            "highlights": [
+            "Releasing Floating Lanterns (Krathongs)",
+            "Decorating Lanterns with Flowers and Candles",
+            "Fireworks Displays",
+            "Traditional Thai Music and Dance",
+            "Water Blessing Rituals"
+            ]
+    },
+        {
+            "id": 12,
+            "name": "Christmas",
+            "religion": "Christian",
+            "month": "December",
+            "country": "Global",
+            "image": "assets/images/christmas festival.jpg",
+            "description": "Christmas is an annual festival commemorating the birth of Jesus Christ, celebrated worldwide with various customs and traditions.",
+            "ageRequirement": "No specific age requirement",
+            "highlights": [
+                "Decorating Christmas Trees",
+                "Exchanging Gifts",
+                "Feasts and Family Gatherings",
+                "Attending Religious Services",
+                "Singing Christmas Carols"
+            ]
+        }
+]
+
