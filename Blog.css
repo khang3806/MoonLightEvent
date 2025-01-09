@@ -1,0 +1,363 @@
+    /* Reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #f9f9f9;
+        overflow-x: hidden;
+    }
+
+    /* Header */
+    header {
+        background-color: #2c3e50;
+        color: #fff;
+        padding: 10px 0;
+        position: relative;
+        z-index: 1000; 
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .logo {
+        margin-left: 0;
+    }
+
+    /* Navigation Menu */
+    .nav-menu {
+        margin-left: auto;
+        padding: 0 20px;
+    }
+
+    .nav-menu li {
+        display: inline;
+    }
+
+    .nav-menu a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 5px 10px;
+        transition: all 0.4s ease-in-out; /* Hiệu ứng hover */
+    }
+
+    .nav-menu a:hover {
+        background-color: #34495e;
+        border-radius: 5px;
+        color:  #1abc9c;
+        transform: scale(1.1); /* Tăng kích thước nhẹ */
+    }
+
+    /* Main Content */
+    .main {
+        padding: 20px 0;
+        background-color: #f9f9f9;
+    }
+
+    .news-updates {
+        max-width: 100%; /* Cho phép chiếm toàn bộ chiều rộng */
+        margin: 0; /* Xóa khoảng cách margin */
+        padding: 0; /* Xóa khoảng cách padding */
+        background-color: #f9f9f9; /* Màu nền trùng với toàn màn hình */
+        border: none; /* Loại bỏ viền */
+        box-shadow: none; /* Loại bỏ hiệu ứng bóng */
+        border-radius: 0; /* Loại bỏ bo tròn góc */
+    }
+
+
+    .news-updates h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: #333;
+        position: relative;
+        overflow: hidden;
+        text-align: center; /* Căn chữ ra giữa */
+    }
+
+
+    .news-updates h1::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #3498db;
+        animation: slideIn 1s ease-in-out;
+    }
+
+    @keyframes slideIn {
+        from {
+            width: 0;
+        }
+        to {
+            width: 100%;
+        }
+    }
+
+    #news-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Reduce min size to 250px */
+        gap: 20px;
+    }
+
+
+    .news-article {
+        background: #fff;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        animation: fadeIn 0.8s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .news-article h3 {
+        font-size: 1.8rem;
+        color: #007bff;
+    }
+
+    .news-article p {
+        color: #555;
+    }
+
+    /* Newsletter Signup */
+    .newsletter-signup {
+        max-width: 600px;
+        margin: 40px auto;
+        padding: 20px;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .newsletter-signup h2 {
+        margin-bottom: 20px;
+        font-size: 1.8rem;
+        color: #333;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .newsletter-signup h2::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #3498db;
+        animation: slideIn 1s ease-in-out;
+    }
+
+    .newsletter-signup input[type="email"] {
+        width: 80%;
+        padding: 0.8rem;
+        font-size: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+
+    .newsletter-signup button {
+        padding: 0.7rem 1.5rem;
+        background: #3498db;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+    }
+
+    .newsletter-signup button:hover {
+        background: #2980b9;
+        transform: scale(1.1);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng */
+    }
+
+    /* Festival Items */
+    .festival-item img {
+        max-width: 100px;
+        height: auto;
+        margin-bottom: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    .festival-item img:hover {
+        transform: rotate(5deg) scale(1.1); /* Xoay và phóng to nhẹ */
+    }
+
+    .festival-item {
+        text-align: center;
+        padding: 15px;
+        border: 1px solid #ecf0f1;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .festival-item:hover {
+        transform: scale(1.05);
+    }
+
+    .festival-item .btn {
+        display: inline-block;
+        padding: 10px 15px;
+        background-color: #3498db;
+        color: #fff;
+        border-radius: 5px;
+        text-decoration: none;
+        margin-top: 10px;
+        transition: all 0.3s ease;
+    }
+
+    .festival-item .btn:hover {
+        background-color: #1abc9c;
+        transform: translateY(-5px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Scroll Animation */
+    .scroll-reveal {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.6s ease-in-out;
+    }
+
+    .scroll-reveal.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* Footer */
+    footer {
+        background-color: #2c3e50;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 14px;
+    }
+
+    footer p {
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    .footer-nav {
+        margin-left: auto;
+        padding: 0 20px;
+    }
+
+    .footer-nav li {
+        display: inline;
+        font-size: 17px;
+    }
+
+    .footer-nav a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 5px 10px;
+        transition: all 0.3s ease;
+    }
+
+    .footer-nav a:hover {
+        background-color: #34495e;
+        border-radius: 5px;
+        color: #1abc9c;
+    }
+    .nav-menu {
+        display: flex;
+        gap: 15px; /* Khoảng cách giữa các mục menu */
+        list-style: none;
+        flex-wrap: wrap; /* Tự động xuống dòng nếu không đủ không gian */
+    }
+
+    .nav-menu li {
+        display: inline-block;
+    }
+
+    .nav-toggle {
+        display: none; /* Ẩn nút toggle mặc định */
+        font-size: 24px;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        z-index: 2;
+    }
+    img.logo {
+        width: 100px ; 
+        height: auto ; 
+    }
+    /* Hiển thị dạng dropdown trên các màn hình nhỏ */
+    @media (max-width: 768px) {
+        .nav-menu {
+            display: none; /* Ẩn menu khi chưa nhấn nút */
+            flex-direction: column; /* Xếp dọc các mục menu */
+            background-color: #2c3e50;
+            position: absolute;
+            top: 100%; /* Đặt ngay dưới header */
+            right: 0;
+            left: 0;
+            padding: 10px 20px;
+            gap: 10px;
+            
+        }
+
+        .nav-menu.active {
+            display: flex; /* Hiển thị menu khi kích hoạt */
+        }
+
+        .nav-toggle {
+            display: block; /* Hiển thị nút toggle */
+        }
+
+        .nav-menu a {
+            padding: 10px;
+            text-align: center;
+        }
+    }
+    #news-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 cột */
+        gap: 40px;
+        padding: 0 10px;
+       
+    }
+
+    .news-article {
+        background: #fff;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        animation: fadeIn 0.8s ease-in-out;
+    }

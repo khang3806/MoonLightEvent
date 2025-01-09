@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 10px 0;
+    position: relative; 
+    
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%; 
+}
+
+.logo {
+    margin-left: 0;
+}
+
+.nav-menu {
+    margin-left: auto; 
+    padding: 0 20px;
+    
+}
+
+
+.nav-menu li {
+    display: inline;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    background-color: #34495e;
+    border-radius: 5px;
+    color:  #1abc9c;
+}
+
+
+/* Main Section */
+.main {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-top: 40px;
+}
+
+/* News Updates Section */
+.news-updates {
+    background: #fff;
+    padding: 3.5rem;  /* Tăng khoảng cách nội dung để thoáng hơn */
+    margin-bottom: 3rem;  /* Tăng khoảng cách giữa các phần */
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+
+.news-updates h1 {
+    margin-top: -50px; /* Tăng khoảng cách trên để không bị che */
+    margin-bottom: -0.5rem;
+    color: #002D62;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+
+.news-updates p {
+    margin-top: 10px; /* Adjust margin for even spacing */
+    margin-bottom: 15px; /* Ensure there's space after each paragraph */
+    padding: 0;
+    font-size: 1.4rem; /* Keep the text size consistent */
+    color: #555;
+    text-align: center; /* Center align the text */
+    line-height: 1.8; /* Improve line spacing for readability */
+    width: 100%; /* Ensure it takes full width */
+    margin-left: 0; /* Remove left margin */
+    margin-right: 0; /* Remove right margin */
+    padding-left: 20px; /* Optional: add padding to the left for better text appearance */
+    padding-right: 20px; /* Optional: add padding to the right for better text appearance */
+}
+
+
+
+
+
+/* Image Styling */
+.event-image {
+    width: 65%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 1.5rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Core Values Section */
+.values {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;  /* Tăng khoảng cách giữa các giá trị */
+    padding: 0;
+    width: 100%;
+}
+
+.value-box {
+    background-color: #f0f8ff;
+    padding: 2.5rem;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.value-box:hover {
+    transform: translateY(-5px);  /* Tạo hiệu ứng nâng lên khi hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.value-box h3 {
+    color: #002D62;
+    margin-bottom: 1rem;
+    font-size: 24px;  /* Tăng kích thước chữ cho tiêu đề */
+}
+
+.value-box p {
+    color: #555;
+    font-size: 17px;
+    text-align: center;
+    line-height: 1.7;
+}
+
+/* Call to Action Section */
+.call-to-action {
+    text-align: center;
+    background-color: #002D62;
+    color: #fff;
+    padding: 3rem;
+    width: 100%;
+}
+
+.call-to-action h2 {
+    margin-bottom: 2rem;
+    font-size: 30px;  /* Tăng cỡ chữ cho tiêu đề CTA */
+}
+
+.call-to-action p {
+    margin-bottom: 2.5rem;
+    font-size: 19px;  /* Tăng cỡ chữ cho đoạn văn CTA */
+    text-align: center;
+    line-height: 1.8;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #3498db;
+    color: #002D62;
+    text-decoration: none;
+    padding: 1.2rem 2.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    font-size: 18px;
+}
+
+.cta-button:hover {
+    background-color: #2980b9;
+}
+
+/* Footer Section */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 16px;
+    width: 100%;
+    margin: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.footer-nav {
+    margin-left: auto;
+    padding: 0 20px;
+}
+
+.footer-nav li {
+    display: inline;
+    font-size: 17px;
+}
+
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 18px;
+    transition: background-color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    background-color: #34495e;
+    border-radius: 5px;
+    color:#1abc9c;
+}
+
+/* Navigation Menu */
+.nav-menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.nav-menu li {
+    display: inline-block;
+}
+
+.nav-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 2;
+}
+
+img.logo {
+    width: 100px !important;
+    height: auto !important;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        background-color: #2c3e50;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu a {
+        padding: 15px;
+        text-align: center;
+    }
+}
+.main-container, .news-updates {
+    width: 100%; /* Chiếm toàn bộ chiều ngang */
+    max-width: none; /* Bỏ giới hạn chiều ngang */ 
+}
+
+

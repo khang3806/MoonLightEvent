@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 10px 0;
+    position: relative; 
+    
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%; 
+}
+
+.logo {
+    margin-left: 0; 
+}
+
+.nav-menu {
+    margin-left: auto; 
+    padding: 0 20px;
+    
+}
+
+
+.nav-menu li {
+    display: inline;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    background-color: #34495e;
+    border-radius: 5px;
+    color:  #1abc9c;
+}
+
+/* Login Form Styles */
+
+.login-account {
+    width: 100%;
+    max-width: 500px; /* Increased from 400px */
+    margin: 50px auto;
+    padding: 40px; /* Increased from 30px */
+    background-color: #34495e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+
+.login-account h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.login-account input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    
+}
+
+.login-account input:focus {
+    border-color: #3498db;
+}
+
+.login-account button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-account button:hover {
+    background-color: #2980b9;
+}
+
+.login-account p {
+    text-align: center;
+    margin-top: 15px;
+    color: white;
+}
+
+.login-account p a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.login-account p a:hover {
+    text-decoration: underline;
+}
+footer {
+    background-color:  #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.footer-nav {
+    margin-left: auto;
+    padding: 0 20px;
+}
+
+.footer-nav li {
+    display: inline;
+    font-size: 17px;
+}
+
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    background-color: #34495e;
+    border-radius: 5px;
+    color: #1abc9c;
+}
+.nav-menu {
+    display: flex;
+    gap: 15px; /* Khoảng cách giữa các mục menu */
+    list-style: none;
+    flex-wrap: wrap; /* Tự động xuống dòng nếu không đủ không gian */
+}
+
+.nav-menu li {
+    display: inline-block;
+}
+
+.nav-toggle {
+    display: none; /* Ẩn nút toggle mặc định */
+    font-size: 24px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 2;
+}
+img.logo {
+    width: 100px ; 
+    height: auto ; 
+}
+/* Hiển thị dạng dropdown trên các màn hình nhỏ */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none; /* Ẩn menu khi chưa nhấn nút */
+        flex-direction: column; /* Xếp dọc các mục menu */
+        background-color: #2c3e50;
+        position: absolute;
+        top: 100%; /* Đặt ngay dưới header */
+        right: 0;
+        left: 0;
+        padding: 10px 20px;
+        gap: 10px;
+    }
+
+    .nav-menu.active {
+        display: flex; /* Hiển thị menu khi kích hoạt */
+    }
+
+    .nav-toggle {
+        display: block; /* Hiển thị nút toggle */
+
+    }
+
+    .nav-menu a {
+        padding: 10px;
+        text-align: center;
+    }
+}
+.login-logo {
+    display: block;
+    margin: auto; 
+    max-width: 100px;
+    height: auto;
+    margin-bottom: -7%;
+}
+
+
+

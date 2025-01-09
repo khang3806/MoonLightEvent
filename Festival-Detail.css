@@ -1,0 +1,283 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 10px 0;
+    position: relative; 
+    
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+.logo {
+    max-width: 120px; 
+    height: auto;
+}
+
+.nav-menu {
+    margin-left: auto; 
+    padding: 0 20px;
+    
+}
+
+
+.nav-menu li {
+    display: inline;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    background-color: #34495e;
+    border-radius: 5px;
+    color:  #1abc9c;
+}
+
+.festival-detail-banner {
+    text-align: center;
+    background: linear-gradient(to bottom, #2c3e50, #34495e); 
+    color: white;
+    padding: 40px 20px; 
+    border-radius:0 0 10px 10px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+}
+
+.festival-detail-banner h1 {
+    font-size: 3rem; 
+    font-weight: bold;
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+}
+
+.festival-detail-banner p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 800px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); 
+}
+
+
+.festival-info {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+ 
+}
+
+.festival-images {
+    flex: 1;
+}
+
+.festival-images img {
+    width: 70%;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.festival-description {
+    flex: 1;
+    text-align: justify; 
+    line-height: 1.2; 
+}
+
+
+.festival-description h2, .festival-description h3 {
+    color: #2c3e50;
+}
+
+.festival-description ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.ticket-sales {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ecf0f1;
+}
+
+.ticket-sales .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    color: white;
+    background-color: #2c3e50;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.ticket-sales .btn:hover {
+    background-color: #34495e;
+}
+
+.favorite-container {
+    position: absolute;
+    top: auto;
+    right: 50px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.favorite-icon {
+    font-size: 30px;
+    color: #f5a623;
+    cursor: pointer;
+}
+
+.favorite-icon:hover {
+    color: #d97a00;
+}
+.nav-toggle {
+    display: none; /* Ẩn nút toggle trên màn hình lớn */
+    font-size: 30px; 
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 1000; /* Đảm bảo nút hiển thị trên cùng */
+}
+
+.nav-toggle:hover {
+    color: #1abc9c; /* Thêm hiệu ứng hover */
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        background-color: #2c3e50;
+        position: absolute;
+        top: 100%; 
+        right: 0;
+        left: 0;
+        padding: 10px 20px;
+        gap: 10px;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu a {
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+
+/* Footer */
+footer {
+    background-color:  #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.footer-nav {
+    margin-left: auto;
+    padding: 0 20px;
+}
+
+.footer-nav li {
+    display: inline;
+    font-size: 17px;
+}
+
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;@media (max-width: 768px) {
+        .nav-toggle {
+            display: block; /* Hiển thị nút toggle */
+        }
+    
+        .nav-menu {
+            display: none; /* Ẩn menu khi chưa bấm toggle */
+            flex-direction: column; /* Chuyển các item trong menu thành dạng cột */
+            background-color: #2c3e50; /* Nền menu */
+            position: absolute; /* Đặt menu phía trên nội dung */
+            top: 100%; /* Ngay bên dưới header */
+            right: 0;
+            width: 100%; /* Chiếm toàn bộ chiều ngang màn hình */
+            padding: 20px;
+            border-radius: 0 0 10px 10px;
+        }
+    
+        .nav-menu.active {
+            display: flex; /* Hiển thị menu khi có class active */
+        }
+    
+        .nav-menu li {
+            margin: 10px 0;
+        }
+    
+        .nav-menu a {
+            padding: 10px 20px;
+        }
+    }
+    
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    background-color: #34495e;
+    border-radius: 5px;
+    color: #1abc9c;
+}
+img.logo {
+    width: 100px !important; 
+    height: auto !important; 
+}

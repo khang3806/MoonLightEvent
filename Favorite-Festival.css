@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    overflow-x: hidden; /* Ngăn chặn cuộn ngang */
+}
+
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 10px 0;
+    position: relative; 
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%; 
+    max-width: 100%; /* Ngăn ngừa tràn viền */
+}
+
+.logo {
+    margin-left: 0;
+    max-width: 100%; /* Đảm bảo logo không tràn ra ngoài */
+}
+
+.nav-menu {
+    margin-left: auto; 
+    padding: 0 20px;
+    max-width: 100%; /* Đảm bảo menu không tràn */
+}
+
+.nav-menu li {
+    display: inline;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    background-color: #34495e;
+    border-radius: 5px;
+    color:  #1abc9c;
+}
+
+.favorites {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    
+}
+
+.favorites h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.festival-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 100%; /* Ngăn ngừa tràn viền */
+    
+}
+
+.festival-list .festival-item {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 100%; /* Đảm bảo không vượt quá chiều rộng container */
+    backdrop-filter: blur(5px); 
+    width: 22%; /* Adjust the width to fit 4 items in a row */
+    max-width: 100%; /* Ensure no overflow */
+    
+}
+
+.festival-list .festival-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    
+}
+
+.festival-list .festival-item h3 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    
+}
+
+.festival-list .festival-item p {
+    font-size: 16px;
+    color: #2c3e50;
+    
+}
+
+.festival-item {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden; /* Ngăn tràn viền */
+    
+    
+}
+
+.festival-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    display: block; /* Đảm bảo ảnh không gây tràn */
+    
+}
+
+.festival-item h3 {
+    margin: 10px 0;
+    
+}
+
+.festival-item p {
+    color: #555;
+    
+    
+}
+
+.delete-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: darkred;
+}
+
+
+
+
+footer {
+    background-color:  #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.footer-nav {
+    margin-left: auto;
+    padding: 0 20px;
+}
+
+.footer-nav li {
+    display: inline;
+    font-size: 17px;
+}
+
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    background-color: #34495e;
+    border-radius: 5px;
+    color: #1abc9c;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 15px; /* Khoảng cách giữa các mục menu */
+    list-style: none;
+    flex-wrap: wrap; /* Tự động xuống dòng nếu không đủ không gian */
+}
+
+.nav-menu li {
+    display: inline-block;
+}
+
+.nav-toggle {
+    display: none; /* Ẩn nút toggle mặc định */
+    font-size: 24px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 2;
+}
+
+img.logo {
+    width: 100px !important; 
+    height: auto !important;
+}
+
+@media (max-width: 1024px) {
+    .festival-list .festival-item {
+        width: 45%; /* Two items per row on medium screens */
+    }
+}
+/* Hiển thị dạng dropdown trên các màn hình nhỏ */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none; /* Ẩn menu khi chưa nhấn nút */
+        flex-direction: column; /* Xếp dọc các mục menu */
+        background-color: #2c3e50;
+        position: absolute;
+        top: 100%; /* Đặt ngay dưới header */
+        right: 0;
+        left: 0;
+        padding: 10px 20px;
+        gap: 10px;
+        z-index: 10; 
+        width: 100%
+    }
+
+    .nav-menu.active {
+        display: flex; /* Hiển thị menu khi kích hoạt */
+    }
+
+    .nav-toggle {
+        display: block; /* Hiển thị nút toggle */
+    }
+
+    .nav-menu a {
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+/* Nút Clear All Favorites kiểu submit */
+.clear-favorites {
+    background-color:#3498db; /* Màu nền đỏ */
+    color: white;
+    padding: 12px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center; /* Canh giữa nội dung */
+}
+
+.clear-favorites:hover {
+    background-color: #2980b9; /* Màu nền đậm khi hover */
+}
+.highlights {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #ffffff;
+    width: 100%; /* Tràn toàn bộ chiều ngang */
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.highlights h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.festival-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 100%; /* Ngăn ngừa tràn viền */
+}
+
+.festival-list .festival-card {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%; /* Chiếm toàn bộ chiều ngang */
+    max-width: 300px; /* Giới hạn chiều rộng tối đa */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ddd;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+}
+
+.festival-list .festival-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.festival-list .festival-card img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.festival-list .festival-card h3 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.festival-list .festival-card p {
+    font-size: 16px;
+    color: #2c3e50;
+    
+}
+.festival-card {
+    position: relative;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    text-align: center;
+    max-width: 300px;
+}
+.festival-card a {
+    text-decoration: none; /* Xóa gạch dưới */
+    color: inherit; /* Dùng màu chữ mặc định */
+}
+
